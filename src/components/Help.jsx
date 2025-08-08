@@ -1,6 +1,44 @@
-import { Mail, Phone, MessageCircle, Clock } from 'lucide-react'
+import { Mail, Phone, MessageCircle, Clock, X } from 'lucide-react'
+import { useState } from 'react'
 
 export default function Help() {
+  const [isModalOpen, setIsModalOpen] = useState(false)
+
+  const faqData = [
+    {
+      question: "What services does Sycom Industry offer?",
+      answer: "We provide a comprehensive range of technology solutions including software development, IT consulting, system integration, and digital transformation services tailored to meet your business needs."
+    },
+    {
+      question: "How long does a typical project take to complete?",
+      answer: "Project timelines vary based on complexity and scope. Simple projects may take 2-4 weeks, while larger enterprise solutions can take 3-6 months. We provide detailed timelines during the initial consultation."
+    },
+    {
+      question: "Do you provide ongoing support after project completion?",
+      answer: "Yes, we offer various maintenance and support packages to ensure your systems continue to operate smoothly. Our support team is available to address any issues and provide updates as needed."
+    },
+    {
+      question: "What industries do you specialize in?",
+      answer: "We have experience across multiple industries including finance, healthcare, education, retail, and manufacturing. Our adaptable approach allows us to tailor solutions to the specific needs of each sector."
+    },
+    {
+      question: "How do you ensure data security in your solutions?",
+      answer: "Security is a top priority. We implement industry-standard encryption, secure coding practices, regular security audits, and compliance with relevant regulations to protect your data."
+    },
+    {
+      question: "What is your pricing model?",
+      answer: "Our pricing is project-based and depends on scope, complexity, and timeline. We provide detailed quotes after understanding your requirements. We also offer flexible payment plans for larger projects."
+    }
+  ]
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen)
+  }
+
+  const closeModal = () => {
+    setIsModalOpen(false)
+  }
+
   const helpOptions = [
     {
       icon: Mail,
@@ -53,11 +91,51 @@ export default function Help() {
             <p className="text-gray-600 dark:text-gray-300 mb-8">
               Find answers to common questions about our services, products, and processes.
             </p>
-            <button className="bg-dark-blue-600 text-white px-6 py-3 rounded-lg hover:bg-dark-blue-700 transition">
+            <button
+              onClick={toggleModal}
+              className="bg-dark-blue-600 text-white px-6 py-3 rounded-lg hover:bg-dark-blue-700 transition"
+            >
               View FAQ
             </button>
           </div>
         </div>
+
+        {/* FAQ Modal */}
+        {isModalOpen && (
+          <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
+            <div className="bg-white dark:bg-gray-800 rounded-xl max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+              <div className="p-6">
+                <div className="flex justify-between items-center mb-4">
+                  <h3 className="text-2xl font-bold text-gray-900 dark:text-white">Frequently Asked Questions</h3>
+                  <button
+                    onClick={closeModal}
+                    className="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+                  >
+                    <X size={24} />
+                  </button>
+                </div>
+                
+                <div className="space-y-6">
+                  {faqData.map((faq, index) => (
+                    <div key={index} className="border-b border-gray-200 dark:border-gray-700 pb-6 last:border-0">
+                      <h4 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{faq.question}</h4>
+                      <p className="text-gray-600 dark:text-gray-300">{faq.answer}</p>
+                    </div>
+                  ))}
+                </div>
+                
+                <div className="mt-6 text-center">
+                  <button
+                    onClick={closeModal}
+                    className="bg-dark-blue-600 text-white px-6 py-2 rounded-lg hover:bg-dark-blue-700 transition"
+                  >
+                    Close
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        )}
       </div>
     </section>
   )

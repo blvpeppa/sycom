@@ -10,7 +10,7 @@ export default function Hero() {
               Smart Solutions for <span className="text-dark-blue-600">Tomorrow</span>
             </h1>
             <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              Transform your business with cutting-edge technology solutions. From web development to AI consulting, we shape the future together.
+              Sycom Industry is a Rwandan software company building websites, mobile apps, operating systems, and AI tools like Sybot AI. We create secure, scalable, and smart digital solutions for businesses and communities around the world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <button className="bg-dark-blue-600 text-white px-8 py-3 rounded-lg hover:bg-dark-blue-700 dark:hover:bg-dark-blue-500 transition flex items-center gap-2">
