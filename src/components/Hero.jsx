@@ -2,21 +2,21 @@ import  { ArrowRight } from 'lucide-react'
 
 export default function Hero() {
   return (
-    <section id="home" className="pt-16 bg-gradient-to-br from-green-50 to-white min-h-screen flex items-center">
+    <section id="home" className="pt-16 bg-gradient-to-br from-dark-blue-50 to-white dark:from-gray-900 dark:to-gray-900 min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
-              Smart Solutions for <span className="text-green-600">Tomorrow</span>
+            <h1 className="text-4xl md:text-6xl font-bold text-gray-900 dark:text-white mb-6">
+              Smart Solutions for <span className="text-dark-blue-600">Tomorrow</span>
             </h1>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               Transform your business with cutting-edge technology solutions. From web development to AI consulting, we shape the future together.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-green-600 text-white px-8 py-3 rounded-lg hover:bg-green-700 transition flex items-center gap-2">
+              <button className="bg-dark-blue-600 text-white px-8 py-3 rounded-lg hover:bg-dark-blue-700 dark:hover:bg-dark-blue-500 transition flex items-center gap-2">
                 Get Started <ArrowRight size={20} />
               </button>
-              <button className="border border-green-600 text-green-600 px-8 py-3 rounded-lg hover:bg-green-50 transition">
+              <button className="border border-dark-blue-600 text-dark-blue-600 px-8 py-3 rounded-lg hover:bg-dark-blue-50 dark:hover:bg-gray-800 dark:text-white dark:border-white transition">
                 Learn More
               </button>
             </div>

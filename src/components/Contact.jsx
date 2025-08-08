@@ -14,21 +14,21 @@ export default function Contact() {
             <h3 className="text-2xl font-bold text-gray-900 mb-6">Contact Information</h3>
             <div className="space-y-6">
               <div className="flex items-center gap-4">
-                <Mail className="text-green-600 w-6 h-6" />
+                <Mail className="text-dark-blue-600 w-6 h-6" />
                 <div>
                   <p className="font-medium text-gray-900">Email</p>
-                  <p className="text-gray-600">contact@sycom.industry</p>
+                  <p className="text-gray-600">mosesnshuti711@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <Phone className="text-green-600 w-6 h-6" />
+                <Phone className="text-dark-blue-600 w-6 h-6" />
                 <div>
                   <p className="font-medium text-gray-900">Phone</p>
-                  <p className="text-gray-600">+250 123 456 789</p>
+                  <p className="text-gray-600">+250 782 858 703</p>
                 </div>
               </div>
               <div className="flex items-center gap-4">
-                <MapPin className="text-green-600 w-6 h-6" />
+                <MapPin className="text-dark-blue-600 w-6 h-6" />
                 <div>
                   <p className="font-medium text-gray-900">Location</p>
                   <p className="text-gray-600">Kigali, Rwanda</p>
@@ -43,26 +43,26 @@ export default function Contact() {
                 <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
                 <input 
                   type="text" 
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-dark-blue-500"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
                 <input 
                   type="email" 
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-dark-blue-500"
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
                 <textarea 
                   rows={4}
-                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-green-500"
+                  className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-dark-blue-500"
                 ></textarea>
               </div>
               <button 
                 type="submit"
-                className="w-full bg-green-600 text-white py-2 px-4 rounded-md hover:bg-green-700 transition"
+                className="w-full bg-dark-blue-600 text-white py-2 px-4 rounded-md hover:bg-dark-blue-700 transition"
               >
                 Send Message
               </button>

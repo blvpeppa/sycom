@@ -1,4 +1,8 @@
 import  { ArrowRight } from 'lucide-react'
+import nshutiMoiseImg from '../assets/ceo.jpg'
+import murengeziSamuelImg from '../assets/Murengezi Samuel,company analysist and consoler.jpg'
+import ishimweShadadImg from '../assets/Ishimwe Shadad ,developer.jpg'
+import barakaSalvatorImg from '../assets/Baraka salvator,copany representative.jpg'
 
 export default function Team() {
   const team = [
@@ -6,29 +10,29 @@ export default function Team() {
       name: "Nshuti Moise",
       role: "CEO and Founder",
       description: "Visionary leader with a deep passion for technology, driving Sycom Industry's mission to shape the future through smart solutions.",
-      portfolio: "https://blvpeppa.vercel.app/",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      portfolio: "https://nshutimoise.vercel.app/",
+      image: nshutiMoiseImg
     },
     {
       name: "Murengezi Samuel",
       role: "Company Analyst and Consultant",
       description: "Strategic thinker who bridges tech with real-world solutions. He ensures Sycom Industry delivers measurable value and user-centric innovation.",
       portfolio: "https://blvpeppa.vercel.app/",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: murengeziSamuelImg
     },
     {
       name: "Ishimwe Shadad",
       role: "Developing Manager",
       description: "Expert in scalable systems and frontend/backend synergy. Leads the development process to turn ideas into functional, beautiful software.",
       portfolio: "https://shadadportfolio.netlify.app",
-      image: "https://images.unsplash.com/photo-1519345182560-3f2917c472ef?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: ishimweShadadImg
     },
     {
       name: "Baraka Salvator",
       role: "Company Representative",
       description: "Builds strong external relationships and communicates Sycom Industry's value to the world. Handles partnerships and public representation.",
       portfolio: "https://barakasalvator.netlify.app",
-      image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80"
+      image: barakaSalvatorImg
     }
   ]
 
@@ -56,7 +60,7 @@ export default function Team() {
                   href={member.portfolio} 
                   target="_blank" 
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-2 bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700 transition text-sm"
+                  className="inline-flex items-center gap-2 bg-dark-blue-600 text-white px-3 py-1 rounded hover:bg-dark-blue-700 transition text-sm"
                 >
                   View Portfolio <ArrowRight size={14} />
                 </a>
