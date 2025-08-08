@@ -6,7 +6,7 @@ export default function Help() {
       icon: Mail,
       title: "Email Support",
       description: "Send us an email and we'll get back to you within 24 hours.",
-      contact: "mosesnshuti711@gmail.com"
+      contact: "sycomindustry@gmail.com"
     },
     {
       icon: Phone,
