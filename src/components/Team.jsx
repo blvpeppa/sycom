@@ -20,19 +20,20 @@ export default function Team() {
       portfolio: "https://blvpeppa.vercel.app/",
       image: murengeziSamuelImg
     },
-    {
-      name: "Ishimwe Shadad",
-      role: "Developing Manager",
-      description: "Expert in scalable systems and frontend/backend synergy. Leads the development process to turn ideas into functional, beautiful software.",
-      portfolio: "https://shadadportfolio.netlify.app",
-      image: ishimweShadadImg
-    },
+    
     {
       name: "Baraka Salvator",
       role: "Company Representative",
       description: "Builds strong external relationships and communicates Sycom Industry's value to the world. Handles partnerships and public representation.",
       portfolio: "https://barakasalvator.netlify.app",
       image: barakaSalvatorImg
+    },
+    {
+      name: "Ishimwe Shadad",
+      role: "Developing Manager",
+      description: "Expert in scalable systems and frontend/backend synergy. Leads the development process to turn ideas into functional, beautiful software.",
+      portfolio: "https://shadadportfolio.netlify.app",
+      image: ishimweShadadImg
     }
   ]
 

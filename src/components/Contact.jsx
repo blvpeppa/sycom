@@ -28,6 +28,15 @@ export default function Contact() {
                 </div>
               </div>
               <div className="flex items-center gap-4">
+                <Phone className="text-dark-blue-600 w-6 h-6" />
+                <div>
+                  <p className="font-medium text-gray-900">WhatsApp</p>
+                  <a href="https://wa.me/250782858703" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-dark-blue-600">
+                    +250 782 858 703
+                  </a>
+                </div>
+              </div>
+              <div className="flex items-center gap-4">
                 <MapPin className="text-dark-blue-600 w-6 h-6" />
                 <div>
                   <p className="font-medium text-gray-900">Location</p>
@@ -38,29 +47,36 @@ export default function Contact() {
           </div>
 
           <div>
-            <form className="space-y-6">
+            <form className="space-y-6" onSubmit={(e) => {
+              e.preventDefault();
+              // Form submission logic would go here
+              alert('Thank you for your message! We will get back to you soon.');
+            }}>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Name</label>
-                <input 
-                  type="text" 
+                <input
+                  type="text"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-dark-blue-500"
+                  required
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Email</label>
-                <input 
-                  type="email" 
+                <input
+                  type="email"
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-dark-blue-500"
+                  required
                 />
               </div>
               <div>
                 <label className="block text-sm font-medium text-gray-700 mb-2">Message</label>
-                <textarea 
+                <textarea
                   rows={4}
                   className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-dark-blue-500"
+                  required
                 ></textarea>
               </div>
-              <button 
+              <button
                 type="submit"
                 className="w-full bg-dark-blue-600 text-white py-2 px-4 rounded-md hover:bg-dark-blue-700 transition"
               >

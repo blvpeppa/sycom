@@ -13,12 +13,18 @@ export default function Hero() {
               Sycom Industry is a Rwandan software company building websites, mobile apps, operating systems, and AI tools like Sybot AI. We create secure, scalable, and smart digital solutions for businesses and communities around the world.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <button className="bg-dark-blue-600 text-white px-8 py-3 rounded-lg hover:bg-dark-blue-700 dark:hover:bg-dark-blue-500 transition flex items-center gap-2">
+              <a
+                href="#contact"
+                className="bg-dark-blue-600 text-white px-8 py-3 rounded-lg hover:bg-dark-blue-700 dark:hover:bg-dark-blue-500 transition flex items-center gap-2"
+              >
                 Get Started <ArrowRight size={20} />
-              </button>
-              <button className="border border-dark-blue-600 text-dark-blue-600 px-8 py-3 rounded-lg hover:bg-dark-blue-50 dark:hover:bg-gray-800 dark:text-white dark:border-white transition">
+              </a>
+              <a
+                href="#services"
+                className="border border-dark-blue-600 text-dark-blue-600 px-8 py-3 rounded-lg hover:bg-dark-blue-50 dark:hover:bg-gray-800 dark:text-white dark:border-white transition text-center"
+              >
                 Learn More
-              </button>
+              </a>
             </div>
           </div>
           <div>
