@@ -13,6 +13,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <img src={logo} alt="Sycom Industry Logo" className="h-10 w-auto" />
+            <b className="text-blue-600 hover:text-dark-blue-600">SYCOM INDUSTRY</b>
           </div>
           
           <nav className="hidden md:flex space-x-8">
