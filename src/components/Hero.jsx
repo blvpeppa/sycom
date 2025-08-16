@@ -29,7 +29,7 @@ export default function Hero() {
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" 
+              src="https://media.istockphoto.com/id/1370598601/photo/two-young-contemporary-diversity-programmers-entering-data-in-computer.jpg?s=612x612&w=0&k=20&c=OFtoPCj8yQTUukvAgIhmGqjeBVepxVN-HPJ_VSqPUBw=" 
               alt="Technology workspace"
               className="rounded-xl shadow-2xl"
             />
